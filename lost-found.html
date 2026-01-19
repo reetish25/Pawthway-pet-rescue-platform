@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lost & Found – Pawthway</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="nav-left">
+    <img src="./assets/logo.jpg" class="logo">
+    <span class="brand">Pawthway</span>
+  </div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="rescue.html">Rescue</a>
+    <a href="adoption.html">Adoption</a>
+    <a href="donation.html">Donations</a>
+    <a href="lost-found.html" class="active">Lost & Found</a>
+    <a href="awareness.html">Awareness</a>
+    <a href="volunteer.html">Volunteer</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>Lost or Found an Animal? 🐾</h1>
+  <p>Help reunite pets with families — your help matters!</p>
+</section>
+
+<!-- TABS -->
+<section class="section pastel-section">
+  <h2 class="section-title">Submit a Report</h2>
+
+  <h3 style="text-align:center;margin-bottom:14px;">Lost Pet</h3>
+  <div class="form-card">
+    <div class="form-group">
+      <label>Pet Description</label>
+      <input id="lost-pet" placeholder="Color, breed...">
+    </div>
+    <div class="form-group">
+      <label>Location Last Seen</label>
+      <input id="lost-location">
+    </div>
+    <button class="primary-btn">Submit Lost Report 🚨</button>
+  </div>
+
+  <h3 style="text-align:center;margin:40px 0 14px;">Found Pet</h3>
+  <div class="form-card">
+    <div class="form-group">
+      <label>Description</label>
+      <input id="found-pet">
+    </div>
+    <div class="form-group">
+      <label>Location Found</label>
+      <input id="found-location">
+    </div>
+    <button class="primary-btn">Submit Found Report 🐶</button>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Recently Lost / Found</h2>
+    <p class="section-subtitle">Displayed when backend fetch is added</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <span class="pill">LOST</span>
+        <h3>Black Labrador</h3>
+        <p>Near KR Market</p>
+      </div>
+      <div class="card">
+        <span class="pill">FOUND</span>
+        <h3>White Persian Cat</h3>
+        <p>Near Jayanagar 9th blk</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">© 2025 Pawthway — Every Pet Deserves Home 🏡</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

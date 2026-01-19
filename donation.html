@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donations – Pawthway</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="nav-left">
+    <img src="./assets/logo.jpg" class="logo">
+    <span class="brand">Pawthway</span>
+  </div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="rescue.html">Rescue</a>
+    <a href="adoption.html">Adoption</a>
+    <a href="donation.html" class="active">Donations</a>
+    <a href="lost-found.html">Lost & Found</a>
+    <a href="awareness.html">Awareness</a>
+    <a href="volunteer.html">Volunteer</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>Support Their Second Chance 💛</h1>
+  <p>Your donation provides food, shelter & medical care for rescued pets.</p>
+</section>
+
+<section class="section pastel-section">
+  <h2 class="section-title">Donation Form</h2>
+  <p class="section-subtitle">Every contribution counts 🐾</p>
+
+  <form id="donationForm" class="form-card">
+
+    <div class="form-group">
+      <label>Your Name</label>
+      <input id="donorName" required>
+    </div>
+
+    <div class="form-group">
+      <label>Amount (₹)</label>
+      <input type="number" id="donationAmount" required>
+    </div>
+
+    <div class="form-group">
+      <label>Purpose</label>
+      <select id="donationPurpose">
+        <option>Medical Help</option>
+        <option>Food & Nutrition</option>
+        <option>Shelter Support</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Phone</label>
+      <input id="donorPhone" required>
+    </div>
+
+    <button class="primary-btn" type="submit">Donate Now 💛</button>
+
+  </form>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Where Your Donations Go</h2>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>🩺 Medical Care</h3>
+        <p>Vaccination, surgeries & treatment</p>
+      </div>
+      <div class="card">
+        <h3>🍲 Daily Meals</h3>
+        <p>Nutritious food for rescued animals</p>
+      </div>
+      <div class="card">
+        <h3>🏠 Safe Shelter</h3>
+        <p>Warm beds & recovery space</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">© 2025 Pawthway – Thank You For Your Kindness 🌟</footer>
+
+<script>
+  // Simple client-side donation handler - no backend required
+  document.getElementById('donationForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('donorName').value;
+    const amount = document.getElementById('donationAmount').value;
+    const purpose = document.getElementById('donationPurpose').value;
+    const phone = document.getElementById('donorPhone').value;
+    
+    if (!name || !amount || !phone) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+    
+    // Show success message
+    alert(Thank you ${name} for your generous donation of ₹${amount} for ${purpose}!\nWe'll contact you at ${phone} for payment details.);
+    
+    // Reset form
+    this.reset();
+  });
+</script>
+</body>
+</html>
